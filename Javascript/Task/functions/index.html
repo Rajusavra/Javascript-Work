@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Normal function
+
+        function mode(a , b) {
+            console.log(a , b);
+        }
+        mode(20 + 30);
+
+
+        // Aroow function
+
+        let demo = ( a , b) => console.log(a*b);
+        demo(5 , 20);
+
+        // 
+
+        // nested function with return
+
+        function nested(a , b) {
+            let sum = (x , y)=> {
+                console.log(x + y);
+            };
+            sum(10 , 20);
+
+            return a * b;
+
+        }
+         let c = nested(5 , 10);
+         console.log(c);
+
+    </script>
+</body>
+</html>
